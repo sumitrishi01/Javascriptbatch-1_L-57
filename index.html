@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavascriptBatch-1_L-57</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <h1>Functions, Object and Array</h1>
+
+        <script>
+            //function define is one time process
+            function myFuntionA(x,y){ //formal argument/parameters
+                //function may return somethings
+                return x+y;            }
+
+            //function calling/invoking is many time process
+
+           
+            let z = myFuntionA(10,20); //actual argument/parameters
+            var a = myFuntionA(50,20);
+            console.log(z);
+
+            //alert(a); //function calling/invoking
+
+            var b = myFuntionA(40,myFuntionA(50,20));
+            //alert(b);
+
+            //Array 
+            var students = ['Sumit',"Rishi",`Gyan`,'Aman']
+                //index =  [   0       1       2     3   ]
+
+            console.log('Hello '+students[0] +` How r U`);
+
+            //function define one time process
+            function greet(m){ //formal arguments/parameters
+                console.log('Hello '+m+' How Are You')
+            }
+
+            //function call/invoke is many time process
+            greet(students[0])
+
+
+            //Loops
+            for(var i=0;i<=3;i++){
+                greet(students[i])
+            }
+
+            function greet2(s){
+                for(var i=0;i<=3;i++){
+                    console.log('11 Hello '+s[i]+' How Are You')
+                }                
+            }
+
+            greet2(students)
+       </script>
+    </body>
+</html>
